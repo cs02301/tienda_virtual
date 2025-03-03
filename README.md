@@ -53,4 +53,5 @@ Vista de Escritorio:
 
 Vista Móvil:
 
-![image](https://github.com/user-attachments/assets/59d03ed8-84b9-40fa-a36c-395b98970927)
+![image](https://github.com/user-attachments/assets/19335f2b-3d07-47c9-a081-fd021a4305bb)
+
