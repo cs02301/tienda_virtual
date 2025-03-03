@@ -1,360 +1,283 @@
-/* ============================== */
-/* Reset y Configuración Global   */
-/* ============================== */
-/* Elimina márgenes, paddings y establece el box-sizing para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* ============================== */
-  /* Estilos Generales del Documento */
-  /* ============================== */
-  /* Configura la fuente, el color base y el fondo del documento para una temática gaming */
   body {
-    font-family: "Roboto", sans-serif; /* Fuente principal para el contenido */
-    background: #0f172a; /* Fondo oscuro, ideal para una estética moderna gaming */
-    color: #e2e8f0; /* Color de texto claro que contrasta con el fondo oscuro */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    font-family: "Roboto", sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
   }
   
-  /* ============================== */
-  /* Contenedor General             */
-  /* ============================== */
-  /* Clase que centra el contenido y limita su ancho máximo para un diseño responsivo */
   .container {
-    width: 90%;             /* Ancho relativo para adaptarse a distintos tamaños de pantalla */
-    max-width: 1200px;      /* Ancho máximo para evitar que el contenido se extienda demasiado */
-    margin: 0 auto;         /* Centrado horizontal del contenido */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  /* ============================== */
-  /* Encabezado y Navegación        */
-  /* ============================== */
-  
-  /* Estilos para el encabezado de la página */
+  /* Cambios importantes en el header */
   header {
-    background: linear-gradient(135deg, #4f46e5, #7e22ce); /* Degradado de fondo para dar un toque moderno */
-    color: #fff;              /* Color de texto blanco para contraste */
-    padding-bottom: 30px;     /* Espacio inferior reducido para separar el header del resto del contenido */
-    border-bottom: 4px solid #22d3ee; /* Borde inferior de acento en color cyan */
+    background: linear-gradient(135deg, #4f46e5, #7e22ce);
+    color: #fff;
+    padding-bottom: 10px; /* Reducido aún más */
+    max-height: 180px; /* Altura máxima fija */
+    overflow: hidden;
   }
   
-  /* ============================== */
-  /* Barra de Navegación           */
-  /* ============================== */
-  
-  /* Configuración de la barra de navegación utilizando flexbox */
   .navbar {
-    display: flex;              /* Organiza los elementos en una fila */
-    align-items: center;        /* Centra verticalmente los elementos */
-    justify-content: space-between; /* Distribuye los elementos entre los extremos */
-    padding: 15px 0;            /* Espaciado vertical reducido */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0; /* Reducido de 15px */
+    position: relative;
   }
   
-  /* ============================== */
-  /* Logo de la Tienda             */
-  /* ============================== */
-  
-  /* Estilos para el logo, que incluye imagen y texto */
   .logo {
-    font-size: 1.7rem;          /* Tamaño de fuente para el texto del logo */
-    font-weight: 700;           /* Texto en negrita para destacar el logo */
-    display: flex;              /* Uso de flexbox para alinear la imagen y el texto */
-    align-items: center;        /* Centrado vertical de la imagen y el texto */
-    gap: 10px;                  /* Espacio entre la imagen y el texto */
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra de texto para efecto luminoso */
+    font-size: 1.2rem; /* Reducido de 1.4rem */
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
-  /* Estilos específicos para la imagen del logo */
   .logo img {
-    height: 45px;               /* Altura de la imagen del logo (reducción para un look más compacto) */
-    filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.6)); /* Efecto de sombra en la imagen para destacar */
+    height: 30px; /* Reducido de 40px */
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
   }
   
-  /* ============================== */
-  /* Enlaces de Navegación         */
-  /* ============================== */
-  
-  /* Estilos para la lista de enlaces de navegación */
   .nav-links {
-    list-style: none;           /* Elimina las viñetas de la lista */
-    display: flex;              /* Organiza los enlaces horizontalmente */
-    gap: 2rem;                 /* Espacio entre cada enlace */
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Reducido de 1.5rem */
   }
   
-  /* Estilos para los enlaces dentro de la navegación */
   .nav-links li a {
-    color: #fff;                /* Color blanco para los enlaces */
-    text-decoration: none;      /* Sin subrayado */
-    font-weight: 500;           /* Peso medio para el texto de los enlaces */
-    font-size: 1.1rem;          /* Tamaño de fuente de los enlaces */
-    transition: all 0.3s ease;  /* Transición suave en todas las propiedades */
-    padding: 8px 15px;          /* Espaciado interno para mejorar la usabilidad */
-    border-radius: 20px;        /* Bordes redondeados para un aspecto moderno */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem; /* Reducido de 1rem */
+    padding: 6px 12px; /* Reducido de 8px 15px */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  /* Efecto hover para los enlaces de navegación */
   .nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.15); /* Fondo semitransparente al pasar el cursor */
-    color: #22d3ee;             /* Cambio de color del texto en hover */
-    transform: translateY(-2px); /* Efecto de elevación en hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #22d3ee;
   }
   
-  /* ============================== */
-  /* Sección Hero (Encabezado)     */
-  /* ============================== */
+  .menu-checkbox {
+    display: none;
+  }
   
-  /* Configuración inicial del bloque "hero" */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  #menu-toggle:checked ~ .nav-links {
+    transform: translateX(0);
+  }
+  
+  /* Cambios importantes en la sección hero */
   .hero-text {
-    text-align: center;         /* Centrado del contenido del hero */
-    padding: 60px 0 0 0;         /* Padding superior aumentado para mayor separación visual */
-  }
-  
-  /* Título principal en la sección hero */
-  .hero-text h2 {
-    font-size: 2.5rem;          /* Tamaño de fuente grande para destacar el mensaje */
-    margin-bottom: 15px;        /* Espacio inferior para separar el título del párrafo */
-    font-weight: 700;           /* Texto en negrita */
-    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5); /* Sombra de texto para un efecto de brillo */
-  }
-  
-  /* Párrafo descriptivo en la sección hero */
-  .hero-text p {
-    font-size: 1.2rem;          /* Tamaño de fuente para mejorar la legibilidad */
-    max-width: 700px;           /* Ancho máximo para evitar líneas demasiado largas */
-    margin: 0 auto;             /* Centrado horizontal del párrafo */
-  }
-  
-  /* ============================== */
-  /* Sección de Productos          */
-  /* ============================== */
-  
-  /* Espaciado para el contenido principal donde se muestran los productos */
-  main {
-    padding: 60px 0;
-  }
-  
-  /* Configuración de la grilla para los productos */
-  .productos {
-    display: grid;              /* Uso de CSS Grid para organizar las tarjetas de producto */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas adaptativas */
-    gap: 30px;                  /* Espacio entre tarjetas */
-  }
-  
-  /* ============================== */
-  /* Tarjeta de Producto Individual */
-  /* ============================== */
-  
-  /* Estilos para cada tarjeta de producto */
-  .producto {
-    background: #1e293b;        /* Fondo oscuro para las tarjetas, resaltando el contenido */
-    border-radius: 15px;        /* Bordes redondeados para un diseño moderno */
-    overflow: hidden;           /* Oculta el contenido que se desborda de la tarjeta */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad a la tarjeta */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transiciones suaves en hover */
-    border: 1px solid #334155;  /* Borde sutil que define la tarjeta */
-  }
-  
-  /* Efecto hover en la tarjeta de producto */
-  .producto:hover {
-    transform: translateY(-10px); /* Eleva la tarjeta ligeramente en hover */
-    box-shadow: 0 15px 30px rgba(34, 211, 238, 0.3); /* Sombra acentuada en hover para resaltar */
-    border-color: #22d3ee;      /* Cambio de color en el borde al hacer hover */
-  }
-  
-  /* ============================== */
-  /* Imagen del Producto           */
-  /* ============================== */
-  
-  /* Estilos para las imágenes dentro de las tarjetas de producto */
-  .producto img {
-    width: 100%;                /* La imagen ocupa todo el ancho de la tarjeta */
-    display: block;             /* Elimina espacios extra alrededor de la imagen */
-    height: 200px;              /* Altura fija para mantener consistencia entre tarjetas */
-    object-fit: cover;          /* La imagen se recorta para cubrir el área sin distorsión */
-    border-bottom: 1px solid #334155; /* Línea divisoria entre la imagen y la información del producto */
-  }
-  
-  /* ============================== */
-  /* Información del Producto      */
-  /* ============================== */
-  
-  /* Contenedor para la información textual del producto */
-  .info-producto {
-    padding: 20px;              /* Espaciado interno para separar el contenido del borde */
-    text-align: center;         /* Centrado del texto */
-  }
-  
-  /* Título del producto */
-  .info-producto h2 {
-    font-size: 1.3rem;          /* Tamaño de fuente para el título del producto */
-    margin-bottom: 10px;        /* Espacio inferior para separar del resto del contenido */
-    color: #fff;                /* Texto blanco para resaltar sobre fondo oscuro */
-  }
-  
-  /* Descripción del producto */
-  .info-producto .descripcion {
-    color: #94a3b8;            /* Color gris claro para la descripción */
-    margin-bottom: 15px;        /* Espacio inferior para separar del precio */
-    font-size: 0.9rem;          /* Tamaño de fuente para la descripción */
-  }
-  
-  /* Precio del producto */
-  .info-producto .precio {
-    font-size: 1.4rem;          /* Tamaño de fuente destacado para el precio */
-    color: #22d3ee;             /* Color cyan para resaltar el precio */
-    font-weight: bold;          /* Negrita para mayor énfasis */
-    margin-bottom: 20px;        /* Espacio inferior para separar del botón */
-  }
-  
-  /* ============================== */
-  /* Botón de Compra (Añadir al Carrito) */
-  /* ============================== */
-  
-  /* Estilos para el botón de compra */
-  .btn-comprar {
-    background: linear-gradient(90deg, #4f46e5, #7e22ce); /* Gradiente de fondo para un aspecto dinámico */
-    color: #fff;                /* Texto en blanco para contraste */
-    border: none;
-    border-radius: 50px;        /* Botón con bordes completamente redondeados */
-    padding: 12px 30px;         /* Espaciado interno para un clic más cómodo */
-    cursor: pointer;            /* Cursor pointer para indicar interactividad */
-    font-weight: 700;           /* Texto en negrita para destacar la acción */
-    transition: all 0.3s ease;  /* Transición suave para cambios en hover */
-    text-transform: uppercase;  /* Texto en mayúsculas para enfatizar el botón */
-    letter-spacing: 1px;        /* Espaciado entre letras para mejor legibilidad */
-    font-size: 0.9rem;          /* Tamaño de fuente del botón */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-  }
-  
-  /* Efecto hover para el botón de compra */
-  .btn-comprar:hover {
-    transform: scale(1.05);     /* Escala ligeramente el botón al pasar el cursor */
-    box-shadow: 0 6px 15px rgba(34, 211, 238, 0.4); /* Sombra más pronunciada en hover */
-  }
-  
-  /* ============================== */
-  /* Pie de Página                */
-  /* ============================== */
-  
-  /* Estilos para el pie de página */
-  footer {
-    background: #1e293b;        /* Fondo oscuro que armoniza con las tarjetas de producto */
-    color: #e2e8f0;             /* Texto claro para buen contraste */
     text-align: center;
-    padding: 30px 0;            /* Espaciado vertical en el footer */
-    font-size: 1rem;            /* Tamaño de fuente estándar */
-    border-top: 4px solid #22d3ee; /* Borde superior para un acento visual */
+    padding: 10px 0; /* Reducido aún más */
   }
   
-  /* Contenedor interno del pie de página */
+  .hero-text h2 {
+    font-size: 1.5rem; /* Reducido aún más */
+    margin-bottom: 5px; /* Reducido aún más */
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+  }
+  
+  .hero-text p {
+    font-size: 0.85rem; /* Reducido aún más */
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cbd5e1;
+  }
+  
+  main {
+    padding: 15px 0; /* Reducido de 20px */
+  }
+  
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Reducido aún más */
+    gap: 12px; /* Reducido más */
+  }
+  
+  .producto {
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: #22d3ee;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: 150px; /* Reducido aún más */
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .info-producto {
+    padding: 12px; /* Reducido de 15px */
+    text-align: center;
+  }
+  
+  .info-producto h2 {
+    font-size: 1rem;
+    margin-bottom: 6px; /* Reducido de 8px */
+    color: #fff;
+  }
+  
+  .info-producto .descripcion {
+    color: #94a3b8;
+    margin-bottom: 12px; /* Reducido de 15px */
+    font-size: 0.85rem; /* Reducido ligeramente */
+  }
+  
+  .info-producto .precio {
+    font-size: 1.1rem;
+    color: #22d3ee;
+    font-weight: bold;
+    margin-bottom: 12px; /* Reducido de 15px */
+  }
+  
+  .btn-comprar {
+    background: linear-gradient(90deg, #4f46e5, #7e22ce);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 16px; /* Reducido de 10px 20px */
+    cursor: pointer;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.8rem; /* Reducido ligeramente */
+  }
+  
+  .btn-comprar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(34, 211, 238, 0.4);
+  }
+  
+  footer {
+    background: #1e293b;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 20px 0; /* Reducido de 30px */
+  }
+  
   .footer-content {
     display: flex;
-    flex-direction: column;     /* Organiza los elementos en columna */
-    gap: 15px;                  /* Espacio entre elementos internos */
-    align-items: center;        /* Centrado horizontal de los elementos */
+    flex-direction: column;
+    gap: 12px; /* Reducido de 15px */
+    align-items: center;
   }
   
-  /* ============================== */
-  /* Enlaces en el Pie de Página  */
-  /* ============================== */
-  
-  /* Estilos para los enlaces del footer */
   footer a {
-    color: #22d3ee;             /* Color de enlace para destacarlo */
+    color: #22d3ee;
     text-decoration: none;
-    transition: color 0.3s ease; /* Transición suave en cambios de color */
+    transition: color 0.3s ease;
   }
   
-  /* Efecto hover para los enlaces del footer */
   footer a:hover {
-    color: #7e22ce;             /* Cambio de color en hover */
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #7e22ce;
+    text-decoration: underline;
   }
   
-  /* ============================== */
-  /* Reglas Responsive            */
-  /* ============================== */
+  .redes-sociales {
+    display: flex;
+    gap: 12px; /* Reducido de 15px */
+    margin: 8px 0; /* Reducido de 10px */
+  }
   
-  /* Ajustes para dispositivos con ancho máximo de 768px */
+  .redes-sociales a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; /* Reducido de 40px */
+    height: 36px; /* Reducido de 40px */
+    border-radius: 50%;
+    background: rgba(34, 211, 238, 0.1);
+    transition: all 0.3s ease;
+    color: #22d3ee;
+  }
+  
+  .redes-sociales a:hover {
+    background: #22d3ee;
+    color: #1e293b;
+  }
+  
   @media (max-width: 768px) {
-    /* Adaptación de la barra de navegación en pantallas medianas */
-    .navbar {
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-  
-    /* Reducción del padding en la sección hero */
-    .hero-text {
-      padding: 30px 0 0 0;
-    }
-  
-    /* Ajuste en el tamaño del título y párrafo de la sección hero */
     .hero-text h2 {
-      font-size: 2rem;
-    }
-    
-    .hero-text p {
-      font-size: 1rem;
-    }
-    
-    /* Adaptación de la grilla de productos en pantallas medianas */
-    .productos {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-  }
-  
-  /* Ajustes para dispositivos con ancho máximo de 600px */
-  @media (max-width: 600px) {
-    .navbar {
-      padding: 15px 0;
-    }
-    
-    .logo {
-      font-size: 1.7rem;
-    }
-    
-    .logo img {
-      height: 40px; /* Reducción de la altura del logo en pantallas pequeñas */
+      font-size: 1.3rem; /* Reducido aún más */
     }
     
     .nav-links {
-      gap: 1rem;              /* Menor separación entre enlaces */
-      width: 100%;
-      justify-content: space-between;
+      position: absolute;
+      top: 50px; /* Reducido de 55px */
+      right: 0;
+      background: #1e293b;
+      width: 200px;
+      height: 0;
+      overflow: hidden;
+      flex-direction: column;
+      gap: 0;
+      transform: translateX(100%);
+      transition: transform 0.3s ease, height 0.3s ease;
+      border-radius: 0 0 0 10px;
     }
     
     .nav-links li a {
-      font-size: 0.9rem;       /* Tamaño de fuente más pequeño para los enlaces */
-      padding: 6px 10px;       /* Menor padding en los enlaces */
+      display: block;
+      padding: 8px 16px; /* Reducido ligeramente */
+      border-bottom: 1px solid #334155;
     }
     
-    .hero-text h2 {
-      font-size: 1.5rem;       /* Título en el hero reducido en dispositivos pequeños */
+    #menu-toggle:checked ~ .nav-links {
+      height: auto;
     }
     
-    .producto {
-      border-radius: 10px;     /* Bordes más pequeños para las tarjetas en pantallas pequeñas */
-    }
-    
-    .info-producto {
-      padding: 15px;          /* Reducción del padding interno de la información del producto */
-    }
-    
-    .info-producto h2 {
-      font-size: 1.1rem;      /* Tamaño de fuente del título del producto reducido */
-    }
-    
-    .info-producto .precio {
-      font-size: 1.2rem;      /* Precio con tamaño de fuente reducido */
-    }
-    
-    .btn-comprar {
-      padding: 10px 20px;     /* Botón con menor padding para pantallas pequeñas */
-      font-size: 0.8rem;      /* Tamaño de fuente del botón reducido */
+    .menu-toggle {
+      display: flex;
     }
   }
-  

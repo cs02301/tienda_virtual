@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!--
-    Documento HTML para "Nexo Gamer
-  -->
   <head>
-    <!-- Configuración de la codificación de caracteres y adaptabilidad a dispositivos móviles -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Título de la página que aparece en la pestaña del navegador -->
     <title>Nexo Gamer | Tu portal de tecnología gaming</title>
     
-    <!-- Importa las fuentes Roboto y Poppins desde Google Fonts para estilizar el texto -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
     
-    <!-- Importa Font Awesome para usar iconos en la navegación y el pie de página -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     
-    <!-- Enlace a la hoja de estilos principal -->
+    <!-- Hoja de estilos principal -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Encabezado del sitio, que incluye la barra de navegación y el bloque "hero" -->
+    <!-- Encabezado -->
     <header>
-      <!-- Barra de navegación principal -->
+      <!-- Barra de navegación -->
       <nav class="navbar container">
-        <!-- Logo de la tienda: imagen y texto -->
+        <!-- Logo -->
         <h1 class="logo">
-          <!-- Imagen del logo (asegúrate de tener el archivo "logo.png" en la carpeta "images") -->
           <img src="images/logo.png" alt="Logo de Nexo Gamer" />
-          <!-- Nombre de la tienda -->
           <span>Nexo Gamer</span>
         </h1>
-        <!-- Menú de navegación con enlaces a las secciones principales -->
+
+        <!-- Checkbox para menú hamburguesa -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <!-- Enlaces de navegación -->
         <ul class="nav-links">
           <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
           <li><a href="#"><i class="fas fa-laptop-code"></i> Productos</a></li>
@@ -44,30 +48,27 @@
         </ul>
       </nav>
 
-      <!-- Sección "hero" con un mensaje destacado para captar la atención del usuario -->
+      <!-- Sección hero -->
       <div class="hero-text container">
         <h2>POTENCIA TU EXPERIENCIA GAMING</h2>
-        <p>Descubre nuestra selección premium de equipos diseñados para llevarte al siguiente nivel</p>
+        <p>Descubre nuestra selección premium de equipos gaming</p>
       </div>
     </header>
 
-    <!-- Contenido principal de la página -->
+    <!-- Contenido principal -->
     <main>
       <div class="container">
-        <!-- Sección de productos: cada artículo representa un producto a la venta -->
         <section class="productos">
           <!-- Producto 1 -->
           <article class="producto">
-            <!-- Imagen representativa del producto -->
             <img
               src="images/198153766598-001-1400Wx1400H.webp"
               alt="Computador Portátil Gamer LENOVO LOQ"
             />
-            <!-- Información del producto: nombre, descripción, precio y botón de acción -->
             <div class="info-producto">
               <h2>Computador Portátil Gamer LENOVO LOQ</h2>
               <p class="descripcion">
-                15.6&quot; Pulgadas 15ARP9 - AMD Ryzen 7 - RAM 24GB - Disco SSD 512GB - Gris
+                15.6" Pulgadas 15ARP9 - AMD Ryzen 7 - RAM 24GB - Disco SSD 512GB - Gris
               </p>
               <p class="precio">$ 4.799.000</p>
               <button class="btn-comprar">Añadir al carrito</button>
@@ -83,7 +84,7 @@
             <div class="info-producto">
               <h2>Computador Portátil Gamer ASUS TUF</h2>
               <p class="descripcion">
-                15.6&quot; Pulgadas FX507ZC4 - Intel Core i5 - RAM 16GB - Disco SSD 512 GB - Gris
+                15.6" Pulgadas FX507ZC4 - Intel Core i5 - RAM 16GB - Disco SSD 512GB - Gris
               </p>
               <p class="precio">$ 3.499.900</p>
               <button class="btn-comprar">Añadir al carrito</button>
@@ -99,7 +100,7 @@
             <div class="info-producto">
               <h2>Computador Portátil Gamer PREDATOR HELIOS</h2>
               <p class="descripcion">
-                16&quot; Pulgadas 99PA Intel Core i9 - RAM 16GB - Disco SSD 1TB - Negro
+                16" Pulgadas 99PA Intel Core i9 - RAM 16GB - Disco SSD 1TB - Negro
               </p>
               <p class="precio">$ 8.299.000</p>
               <button class="btn-comprar">Añadir al carrito</button>
@@ -109,23 +110,21 @@
       </div>
     </main>
 
-    <!-- Pie de página con información de contacto y enlaces a redes sociales -->
+    <!-- Pie de página -->
     <footer>
       <div class="container footer-content">
-        <!-- Información de contacto: correo, teléfono y WhatsApp -->
         <p>
-          <i class="fas fa-envelope"></i> <a href="mailto:info@nexogamer.com">info@nexogamer.com</a> | 
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@nexogamer.com">info@nexogamer.com</a> |
           <i class="fas fa-phone"></i> 123-456-7890 |
           <i class="fab fa-whatsapp"></i> +57 321 456 7890
         </p>
-        <!-- Enlaces a las redes sociales -->
         <div class="redes-sociales">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-        <!-- Aviso de derechos de autor -->
         <small>&copy; 2025 Nexo Gamer. Todos los derechos reservados.</small>
       </div>
     </footer>
